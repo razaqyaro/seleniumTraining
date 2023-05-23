@@ -9,6 +9,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 public class SelectDropdown
 {
     public static String browser = "chrome";
@@ -33,10 +35,18 @@ public class SelectDropdown
 
         Select select = new Select(dropdown);
 
-        select.selectByIndex(2);
+        select.selectByIndex(1);
         Thread.sleep(3000);
         select.selectByValue("Events");
         Thread.sleep(3000);
         select.selectByVisibleText("Word of Mouth/Referral");
+
+        WebElement ddown = driver.findElement(By.id("multi-select"));
+        select.selectByValue("California");
+        select.selectByIndex(5);
+
+        List<WebElement> allItems = select.getAllSelectedOptions();
+        System.out.println(allItems.size());
+        select.deselectAll();
     }
 }
