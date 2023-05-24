@@ -7,14 +7,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-public class SelectDropdown
-{
+public class PrintAllLinks {
     public static String browser = "chrome";
     public static WebDriver driver;
+
     public static void main(String[] args) throws InterruptedException {
         if (browser.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
@@ -29,27 +28,16 @@ public class SelectDropdown
         driver.get("https://www.sugarcrm.com");
         driver.manage().window().maximize();
         driver.findElement(By.id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")).click();
-        driver.findElement(By.linkText("GET A DEMO")).click();
-        Thread.sleep(3000);
-        WebElement dropdown = driver.findElement(By.id("how-select"));
 
-        Select select = new Select(dropdown);
+        List<WebElement> allTags = driver.findElements(By.tagName("a"));
+        System.out.println("Total number of links: "+allTags.size());
 
-        select.selectByIndex(1);
-        Thread.sleep(3000);
-        select.selectByValue("Events");
-        Thread.sleep(3000);
-        select.selectByVisibleText("Word of Mouth/Referral");
+        // print all links
+        for(int i = 0; i < allTags.size(); i++)
+        {
 
-        WebElement ddown = driver.findElement(By.id("multi-select"));
-        select.selectByValue("California");
-        select.selectByIndex(5);
-
-        List<WebElement> allItems = select.getAllSelectedOptions();
-        System.out.println(allItems.size());
-        select.deselectAll();
-
-        WebElement firstOption = select.getFirstSelectedOption();
-        System.out.println(firstOption.getText());
+            System.out.println("Links on page are "+allTags.get(i).getAttribute("href"));
+            System.out.println(allTags.get(i).getText());
+        }
     }
 }
