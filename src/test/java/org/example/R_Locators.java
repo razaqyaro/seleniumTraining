@@ -34,7 +34,7 @@ public class R_Locators {
             driver = new EdgeDriver();
         }
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));  // when application in a transition state, you need to wait small Thread.sleep(1000)
         driver.get("https://rahulshettyacademy.com/locatorspractice");
         driver.manage().window().maximize();
         driver.findElement(By.id("inputUsername")).sendKeys("rahul");
@@ -52,7 +52,10 @@ public class R_Locators {
         driver.findElement(By.xpath("//input[@type='text'][2]")).sendKeys(email);
         driver.findElement(By.xpath("//input[@type='text'][2]")).clear();
         driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("john@gmail.com");
-        driver.findElement(By.cssSelector("input[text='text']:nth-child(2)"));
+       // driver.findElement(By.cssSelector("input[text='text']:nth-child(2)"));
+        driver.findElement(By.xpath("//form/input[3]")).sendKeys("9864353253");
+        driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
+        System.out.println(driver.findElement(By.cssSelector("Form p")).getText());
         // css selector => tagname[attribute='value'] p[class='error']
         // xpath => tagname[@attribute'value']
     }
