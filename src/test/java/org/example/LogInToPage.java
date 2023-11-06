@@ -51,6 +51,8 @@ public class LogInToPage {
         driver.findElement(By.xpath("//div/span[2]/input")).click();
 
         driver.findElement(By.className("submit")).click();
+
+        System.out.println(driver.findElement(By.tagName("p")));
     }
 }
 

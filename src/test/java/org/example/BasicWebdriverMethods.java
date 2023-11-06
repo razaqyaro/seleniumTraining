@@ -11,8 +11,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.List;
 import java.util.Set;
 
-import static org.openqa.selenium.support.locators.RelativeLocator.with;
-
 public class BasicWebdriverMethods
 {
         public static String browser = "chrome";
