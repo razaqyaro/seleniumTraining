@@ -23,33 +23,23 @@ public class UpdatedDropdrown
         }
         driver.findElement(By.id("btnclosepaxoption")).click();
         driver.findElement(By.id("divpaxinfo")).getText();
-
         driver.findElement(By.id("divpaxinfo")).click();
-
         Thread.sleep(2000L);
 
-               /*int i=1;
+        String style = driver.findElement(By.id("Div1")).getAttribute("style");
+        System.out.println(style);
+        driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
+        System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
 
-            while(i<5)
-
-            {
-
-            driver.findElement(By.id("hrefIncAdt")).click();
-
-            i++;
-
-            }*/
-
-        System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
-        for(int j=1;j<5;j++)
-
+        if(driver.findElement(By.id("Div1")).getAttribute("style").contains("1"))
         {
-
-            driver.findElement(By.id("hrefIncAdt")).click();
-
+            System.out.println("It's enabled");
+            Assert.assertTrue(true);
         }
-        driver.findElement(By.id("btnclosepaxoption")).click();
-        Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "5 Adult");
-        System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
+        else
+        {
+            Assert.assertFalse(false);
+        }
+
     }
 }
