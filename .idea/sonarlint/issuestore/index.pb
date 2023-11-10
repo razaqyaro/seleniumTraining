@@ -15,3 +15,17 @@ Z
 *src/test/java/org/example/LogInToPage.java,a\d\ad3015124bafabd54d364fe259bb3f856c698490
 _
 /src/test/java/org/example/MakeUseTranverse.java,2\c\2cd7dd9c42db46713a3561a2b99ed9db9d440ef9
+X
+(src/test/java/org/example/LoginTest.java,d\1\d1dee004b6db887a2d7241b8e35ca87034186c70
+d
+4src/test/java/org/example/BasicWebdriverMethods.java,4\2\42cd85cedfe35f8ca5234a7cc1fa4462997d8490
+^
+.src/test/java/org/example/TransverseXpath.java,2\0\2073d026a9e4d8c29891eb203d91355b34f6b1c9
+_
+/src/test/java/org/example/WindowActivities.java,a\7\a792f18ec5baa14555674339b852bb600d5324c7
+i
+9src/test/java/org/example/MethodsUsageToGrabPassword.java,9\6\967b456c8eff3f1eea04acc860e8120371f0b8a0
+Z
+*src/test/java/org/example/RefLocators.java,b\e\be82c393a900c132b3ac3b03f7c05add27f83847
+b
+2src/test/java/org/example/AutoSuggestDropDown.java,9\7\9793db8c136f119533efeaaf6b205be62d176cf0
