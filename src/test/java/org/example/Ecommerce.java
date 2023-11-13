@@ -64,6 +64,7 @@ public class Ecommerce
  The specified time is the maximum time limit the code will be waited.
 
  Explicit wait:
+   1. WebDriverWait class and FluentWait class
 
 */
 //
