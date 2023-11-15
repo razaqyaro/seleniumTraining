@@ -31,3 +31,9 @@ b
 2src/test/java/org/example/AutoSuggestDropDown.java,9\7\9793db8c136f119533efeaaf6b205be62d176cf0
 ^
 .src/test/java/org/example/DynamicDropdown.java,7\1\7144d6a3d5c1524ef758cc9746733d591e69083d
+\
+,src/test/java/org/example/AutoDropdrown.java,d\6\d6404c2e337ff40cd278da164c892bca73e6ea48
+]
+-src/test/java/org/example/EndToEndScript.java,9\9\99ca431bb9e335e89b4d9539d387fee6918504b6
+Y
+)src/test/java/org/example/R_Locators.java,b\6\b6969686919b64f1e231ff8e88a062ccf75d1b85
