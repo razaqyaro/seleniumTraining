@@ -23,10 +23,12 @@ public class ActionsDemo
         hover.moveToElement(wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a[data-nav-role='signin']"))))
                 .build()
                 .perform();
-        hover.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello")
+        hover.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick()
                 .build()
                 .perform();
-
+        hover.moveToElement(wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a[data-nav-role='signin']")))).contextClick()
+                .build()
+                .perform();
 
     }
 }

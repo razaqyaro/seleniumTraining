@@ -9,8 +9,6 @@ W
 'src/test/java/org/example/Locators.java,f\9\f95f34a7f818f26795f5f0418147e43206176b34
 \
 ,src/test/java/org/example/PrintAllLinks.java,7\5\75af5987ead66ba2486b4c3c2a2df1ba06bfc152
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 Z
 *src/test/java/org/example/LogInToPage.java,a\d\ad3015124bafabd54d364fe259bb3f856c698490
 _
