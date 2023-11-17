@@ -15,8 +15,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static java.util.Arrays.stream;
-
 public class Ecommerce
 {
     public static void main(String[] args) throws InterruptedException {
