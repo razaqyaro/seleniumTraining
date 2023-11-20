@@ -43,8 +43,6 @@ a
 ,src/test/java/org/example/AlertsAndMore.java,6\3\63734cb5b8c8f72c8ec8ce04822d39f722f4667b
 Y
 )src/test/java/org/example/CheckBoxes.java,a\1\a1d667167a27bd73ff9bcd54e215b97d206499df
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 g
 7src/test/java/org/example/End2EndEcommerceWithWait.java,f\d\fd0449cb95ffb8ae9492e47b1c34a338df33402a
 a
@@ -57,8 +55,6 @@ Z
 .src/test/java/org/example/PracticeWindows.java,8\4\84614825b83c764f88e409c7997fb4a96820e94c
 Z
 *src/test/java/org/example/Assignment3.java,2\c\2cc7e13cd47b08fd18bdb173e0a6d7f1f868c489
-T
-$src/test/java/org/example/Scope.java,7\0\709373ef82f3434b64e0669faa90ceb2b8bde67c
 i
 9src/test/java/org/example/AltWayToHandleNestedFrames.java,4\6\46751bc56b4200f776df2c3e537ab5bad6e00e0c
 U

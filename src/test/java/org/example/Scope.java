@@ -1,5 +1,6 @@
 package org.example;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -15,10 +16,10 @@ public class Scope
 {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\browserDrivers\\chromedriver.exe");
+       // ChromeDriver driver1 = new ChromeDriver();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://qaclickacademy.com/practice.php");
-
         // Get the count of links on the page
         List<WebElement> links = driver.findElements(By.tagName("a"));
         System.out.println(links.size());
