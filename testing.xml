@@ -4,7 +4,11 @@
     <test name="Nopackage" >
         <classes>
             <class name="org.example.NewWindows"/>
-            <class name="org.example.Ecommerce"></class>
+            <class name="org.example.Ecommerce">
+                <methods>
+                    <include name="placeOrderTest"/>
+                </methods>
+            </class>
             <class name="org.example.MethodsUsageToGrabPassword">
                 <methods>
                     <exclude name="LogInTest"/>

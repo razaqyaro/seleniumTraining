@@ -19,8 +19,7 @@ import java.util.concurrent.TimeUnit;
 public class Ecommerce
 {
     @Test
-    public void placeOrderTest()
-    {
+    public void placeOrderTest() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\browserDrivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -33,6 +32,7 @@ public class Ecommerce
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         wait.until(ExpectedConditions.presenceOfElementLocated((By.cssSelector("input[placeholder='Enter promo code']")))).sendKeys("rahulshettyacademy");
         driver.findElement(By.className("promoBtn")).click();
+        Thread.sleep(3000);
         Assert.assertEquals(driver.findElement(By.className("promoInfo")).getText(), "Code applied ..!");
         System.out.println(driver.findElement(By.className("promoInfo")).getText());
         driver.findElement(By.xpath("//button[text()='Place Order']")).click();
