@@ -1,20 +1,20 @@
 package org.example;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WindowType;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 public class NewWindows
 {
     @Test
-    public void newWindowTest()
-    {
+    public void newWindowTest() throws IOException {
         System.setProperty("webdriver.chrome.driver", "C:\\browserDrivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -34,7 +34,11 @@ public class NewWindows
         System.out.println(courseName);
 
         driver.switchTo().window(parentWindow);
-        driver.findElement(By.cssSelector("[name='name']")).sendKeys(courseName);
+        WebElement name = driver.findElement(By.cssSelector("[name='name']"));
+        name.sendKeys(courseName);
+
+        File file = name.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(file, new File("C:\\Users\\Abdul-RazakHussein\\Desktop\\cicdPics\\logo.png"));
     }
 
 
