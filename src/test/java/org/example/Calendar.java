@@ -2,11 +2,14 @@ package org.example;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
 import java.util.List;
 
 public class Calendar
 {
-    public static void main(String[] args) throws InterruptedException {
+    @Test
+    public void calendarTest() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\browserDrivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();

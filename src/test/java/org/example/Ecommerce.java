@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 import java.util.Arrays;
@@ -17,7 +18,9 @@ import java.util.concurrent.TimeUnit;
 
 public class Ecommerce
 {
-    public static void main(String[] args) throws InterruptedException {
+    @Test
+    public void placeOrderTest()
+    {
         System.setProperty("webdriver.chrome.driver", "C:\\browserDrivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();

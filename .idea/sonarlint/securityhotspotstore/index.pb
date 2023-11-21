@@ -26,6 +26,4 @@ Y
 \
 ,src/test/java/org/example/WindowHandles.java,6\6\6665b519733f67c1b81701bd0b6489d1e987899e
 X
-(src/test/java/org/example/WebTables.java,8\3\83129d77d593d08dc51aa74f01e29af602f6396f
-X
 (src/test/java/org/example/Scrolling.java,d\5\d555dd04a8728eef46dd32254f49c51a8fb025c8
