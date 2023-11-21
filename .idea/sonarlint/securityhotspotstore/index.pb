@@ -81,5 +81,3 @@ X
 (src/test/java/org/example/WebTables.java,8\3\83129d77d593d08dc51aa74f01e29af602f6396f
 X
 (src/test/java/org/example/Scrolling.java,d\5\d555dd04a8728eef46dd32254f49c51a8fb025c8
-d
-4src/test/java/org/example/StreamsDemoInSelenium.java,5\f\5faa3f72e054556fbce8fef99d37d434398992b9

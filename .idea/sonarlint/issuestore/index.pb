@@ -81,5 +81,3 @@ X
 (src/test/java/org/example/Scrolling.java,d\5\d555dd04a8728eef46dd32254f49c51a8fb025c8
 X
 (src/test/java/org/example/Ecommerce.java,d\9\d9b513f35208083216b003b7c850dad7ecd11a18
-d
-4src/test/java/org/example/StreamsDemoInSelenium.java,5\f\5faa3f72e054556fbce8fef99d37d434398992b9
