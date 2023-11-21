@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 import java.util.List;
@@ -14,7 +15,9 @@ import java.util.concurrent.TimeUnit;
 
 public class End2EndEcommerceWithWait
 {
-    public static void main(String[] args) {
+    @Test(groups = {"Smoke"})
+    public void orderProductTest()
+    {
 
         String name = "rahulshettyacademy";
         String password = "learning";
