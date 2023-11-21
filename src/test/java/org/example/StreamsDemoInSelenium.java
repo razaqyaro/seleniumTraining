@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public class StreamsDemoInSelenium
 {
     @Test
-    public void test3()
+    public void PaginationTest()
     {
         System.setProperty("webdriver.chrome.driver", "C:\\browserDrivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
